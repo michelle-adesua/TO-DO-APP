@@ -5,7 +5,7 @@
 }
 
 body {
-    /* #363532, rgb(88, 111, 112) */
+   
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,6 @@ body {
 
 /* Animation */
 #title {
-    border-right: solid 3px rgba(0, 0, 0, 0.75);
     white-space: pre;
     overflow: hidden;     
     letter-spacing: 0.20rem;
@@ -100,34 +99,9 @@ body {
     max-width: 480px;
   }
   
-  /* Animation */
-#title {
-    animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
-        animated-cursor 750ms steps(11,end) infinite;
-  }
-
-#title.darker-title {
-    animation: animated-text 2s steps(11,end) 0.5s 1 normal both, darker-animated-cursor 750ms steps(11,end) infinite;
-}
+ 
   
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0%;}
-    to{width: 480px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(0, 0, 0, 0.75);}
-    to{border-right-color: transparent;}
-  }
-
-  @keyframes darker-animated-cursor {
-    from{border-right-color: #01394c;}
-    to{border-right-color: transparent;}
-  }
+ 
 
 form {
     display: flex;
@@ -143,7 +117,6 @@ form input {
     font-size: 17px;
     border: none;
     outline: none;
-    /* border-radius: 15; */
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
     max-width: 500px;
@@ -154,12 +127,12 @@ form input {
 /* Input themes */
 form input.standard-input {
     background-color: #181a1a;
-    color: rgb(247, 226, 223);
+    color: rgb(189, 182, 181);
 }
 
 
 form input.light-input {
-    background-color: #AEB1B4;
+    background-color: #a5a7aa;
     color: #1a150e;
 }
 
@@ -216,7 +189,7 @@ button.standard-button:hover {
 }
 
 button.light-button {
-    background-color: white;
+    background-color: rgb(223, 216, 216);
     color: #1a150e;
 }
 
