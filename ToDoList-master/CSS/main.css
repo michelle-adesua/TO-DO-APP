@@ -256,13 +256,9 @@ form button {
 
 .todo li{
     padding: 7px;
-    /* word-wrap: break-word; */
-    /* flex-wrap: wrap; */
     font-size: 20px;
-    flex: 1; /* To push the trash and the check button to the right */
+    flex: 1; 
     border-radius: 30px;
-
-    /* wraps the links */
     overflow-wrap: anywhere;
 }
 
@@ -296,46 +292,3 @@ form button {
     opacity: 0;
 }
 
-/* Responsive design */
-@media only screen and (max-width: 1000px) {
-    .flexrow-container {
-        align-self: unset;
-        margin-right: 0;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #header {
-        font-size: 2rem;
-    }
-    }
-
-
-@media only screen and (max-width: 400px) {
-    #header {
-        font-size: 1.5rem;
-    }
-
-    
-    }
-
-
-@media only screen and (max-width: 400px) {
-    form {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    form input {
-        border-radius: 17px;
-    }
-
-    form button {
-        border-radius: 15px;
-        margin-top: 15px;
-        width: 50%;
-    }
-    form > button.light-button {
-        box-shadow: 0 0 5px lightgray;
-    }
-}
