@@ -10,6 +10,10 @@
   #header {
     font-size: 2rem;
   }
+  form input.light-input {
+    background-color: #bdbfc2;
+    color: #1a150e;
+  }
 }
 
 @media only screen and (max-width: 400px) {
